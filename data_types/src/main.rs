@@ -55,7 +55,7 @@ fn main() {
     // uses Unicode Scalar Value, supporting more than just ASCII
 
     let c = 'z';
-    let d: char = "Z";
+    let d: char = 'Z';
     let heart_eyed_cat = '😻';
 
     // Compound Types
@@ -78,9 +78,9 @@ fn main() {
     // can also access a tuple element via index
     let tup2: (i32, f64, u8) = (500, 6.4, 1);
 
-    let five_hundred = tup2.0;
-    let six_point_four = x.1;
-    let uno = x.2;
+    let five_hundred = tup2;
+    let six_point_four = five_hundred.1;
+    let uno = five_hundred.2;
 
     // The empty tuple () is called unit
     // its value and type are written ()
